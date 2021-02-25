@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bingfa/bingfa.iml" filepath="$PROJECT_DIR$/bingfa/bingfa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-order/micro-order.iml" filepath="$PROJECT_DIR$/micro-order/micro-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-web/micro-web.iml" filepath="$PROJECT_DIR$/micro-web/micro-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-eureka/springcloud-eureka.iml" filepath="$PROJECT_DIR$/springcloud-eureka/springcloud-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/springcoluddome01.iml" filepath="$PROJECT_DIR$/.idea/springcoluddome01.iml" />
+    </modules>
+  </component>
+</project>

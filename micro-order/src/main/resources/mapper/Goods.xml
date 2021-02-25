@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.example.dao.GoodsDao" >
+
+    <resultMap id="goodsMap" type="org.example.entity.Goods" >
+        <id column="id" property="id" jdbcType="BIGINT" />
+        <result property="goodsName" column="goods_name" jdbcType="VARCHAR" />
+        <result property="originalImg" column="original_img" jdbcType="VARCHAR" />
+        <result property="key" column="key" jdbcType="VARCHAR" />
+        <result property="keyName" column="key_name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+
+    <select id="getGoodsById" resultMap="goodsMap"   >
+        SELECT * FROM goods where id = #{id}
+    </select>
+
+
+
+</mapper>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/springcloud-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-order/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-web/pom.xml" />
+        <option value="$PROJECT_DIR$/bingfa/pom.xml" />
+      </list>
+    </option>
+  </component>
+</project>
