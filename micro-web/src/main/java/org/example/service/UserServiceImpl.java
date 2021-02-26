@@ -195,7 +195,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public boolean killGood(Integer goodsId ,Integer UserId){
         //不准重复秒杀
-        boolean isUser =  redisTemplate.hasKey(KillConstants.KILLED_GOOD_USER + goodsId+UserId);
+        boolean isUser =  redisTemplate.opsForSet().isMember(KillConstants.KILLED_GOOD_USER + goodsId, UserId);
 
         if(isUser){
             log.info("【用户】+"+UserId+"【重复秒杀】");
@@ -206,7 +206,8 @@ public class UserServiceImpl implements UserService {
         System.out.println("【返回值】："+result);
         if(0 <= result){
             System.out.println("记录用户");
-            redisTemplate.opsForValue().set(KillConstants.KILLED_GOOD_USER + goodsId+UserId,UserId);
+//            redisTemplate.opsForValue().set(KillConstants.KILLED_GOOD_USER + goodsId,UserId);
+            redisTemplate.opsForSet().add(KillConstants.KILLED_GOOD_USER + goodsId, UserId);
             return true;
         }
 
