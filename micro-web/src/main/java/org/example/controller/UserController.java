@@ -22,7 +22,7 @@ public class UserController {
     @RequestMapping("/kill")
     public Object killGoods(){
 //        System.out.println("【康康】]");
-        Integer killId = 2;
+        Integer killId = 1;
 //        System.out.println("看看："+killId);
 
         Goods killGoods = userService.detail(killId);
